@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="org.dartlang.thermometer"
+      version="0.0.2">
+	
+    <name>Device Thermometer</name>
+    <description>Cordova Device Thermometer Plugin</description>
+    <license>LICENSE</license>
+    <keywords>cordova,device,thermometer</keywords>
+    <repo>https://github.com/zanderso/cordova-plugin-thermometer</repo>
+    <issue></issue>
+
+    <js-module src="www/Temperature.js" name="Temperature">
+        <clobbers target="Temperature" />
+    </js-module>
+    
+    <js-module src="www/thermometer.js" name="thermometer">
+        <clobbers target="navigator.thermometer" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+	    
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Thermometer">
+                <param name="android-package" value="org.dartlang.thermometer.ThermometerListener"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ThermometerListener.java" target-dir="src/org/dartlang/thermometer" />
+    
+    </platform>
+</plugin>
