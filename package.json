@@ -1,6 +1,6 @@
 {
     "version": "0.0.1",
-    "name": "org.dartlang.thermometer",
+    "name": "org.dartlang.phonegap.thermometer",
     "cordova_name": "Device Thermometer",
     "description": "Cordova Device Thermometer Plugin",
     "license": "LICENSE",

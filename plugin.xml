@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="org.dartlang.thermometer"
+           id="org.dartlang.phonegap.thermometer"
       version="0.0.2">
 	
     <name>Device Thermometer</name>
@@ -24,11 +24,11 @@
 	    
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Thermometer">
-                <param name="android-package" value="org.dartlang.thermometer.ThermometerListener"/>
+                <param name="android-package" value="org.dartlang.phonegap.thermometer.ThermometerListener"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/ThermometerListener.java" target-dir="src/org/dartlang/thermometer" />
+        <source-file src="src/android/ThermometerListener.java" target-dir="src/org/dartlang/phonegap/thermometer" />
     
     </platform>
 </plugin>

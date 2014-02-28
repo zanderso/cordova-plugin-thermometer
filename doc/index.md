@@ -2,13 +2,13 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-# org.dartlang.thermometer
+# org.dartlang.phonegap.thermometer
 
 This plugin provides access to the device's thermometer.
 
 ## Installation
 
-    cordova plugin add org.dartlang.thermometer
+    cordova plugin add org.dartlang.phonegap.thermometer
 
 ## Supported Platforms
 
